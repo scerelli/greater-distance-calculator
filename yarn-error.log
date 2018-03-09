@@ -1,5 +1,5 @@
 Arguments: 
-  /home/vood/.nvm/versions/node/v9.7.1/bin/node /home/vood/.nvm/versions/node/v9.7.1/bin/yarn lint
+  /home/vood/.nvm/versions/node/v9.7.1/bin/node /home/vood/.nvm/versions/node/v9.7.1/bin/yarn start
 
 PATH: 
   /home/vood/.nvm/versions/node/v9.7.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -7824,7 +7824,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c ./node_modules/.bin/eslint app/**/*.js --config ./.eslintrc.js
+  Arguments: -c webpack-dev-server --config ./webpack.config.dev.js --mode development
   Directory: /home/vood/dev/intercom-code-challange
   Output:
   

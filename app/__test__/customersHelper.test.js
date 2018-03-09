@@ -25,7 +25,7 @@ it('Returns a valid JSON containing the structure of JSONMock', () => {
 })
 
 it('Throw an error if no txt is passed as customersRawToJSON argument', () => {
-  expect(() => customersRawToJSON()).toThrow()
+  expect(() => customersRawToJSON()).toThrow(TypeError)
 })
 
 it('Given a max range it should return an array of filtered customers', () => {
@@ -35,5 +35,5 @@ it('Given a max range it should return an array of filtered customers', () => {
 })
 
 it('Throw an error if the argument passed in customersInRange isNaN', () => {
-  expect(() => customersInRange('ciao')).toThrow()
+  expect(() => customersInRange('ciao')).toThrow(TypeError)
 })

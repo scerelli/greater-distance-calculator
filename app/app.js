@@ -11,7 +11,9 @@ function updateCustomersInDOM () {
   fragment.selectNodeContents(customersContainer)
   fragment.deleteContents()
 
-  filteredCustomers.forEach(function (customer) {
+  filteredCustomers.forEach(fragmentToDOM)
+
+  function fragmentToDOM (customer) {
     const customerNode = document.createElement('li')
     customerNode.className = 'customer'
     const customerTextNode = document.createTextNode(`
@@ -20,7 +22,7 @@ function updateCustomersInDOM () {
     `)
     customerNode.appendChild(customerTextNode)
     fragment.insertNode(customerNode)
-  })
+  }
 }
 
 document.getElementById('refresh-results').onclick = updateCustomersInDOM

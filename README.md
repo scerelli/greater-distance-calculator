@@ -7,8 +7,8 @@
 ## Build
 `yarn build`
 
+It generates a dist folder that can be deployed anywhere.
+
 ## Other commands
 `yarn test`
 `yarn lint`
-
-It generate a dist folder that can be deployed anywhere.
